@@ -1,0 +1,14 @@
+{
+  "name": "maus",
+  "version": "1.0.0",
+  "description": "Euc Nordvest",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/styles.scss css/styles.css -w"
+  },
+  "author": "Admir Kurtovic",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
