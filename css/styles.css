@@ -68,7 +68,7 @@ body {
   font-weight: 400; }
 
 .home {
-  height: 95vh;
+  height: 100vh;
   background: url("http://res.cloudinary.com/dzwi57aj6/image/upload/v1519672646/maus/top-background.jpg");
   background-size: cover;
   background-position: top; }
@@ -119,17 +119,24 @@ body {
   position: relative; }
 
 .header-text {
-  width: 25%;
+  width: 30%;
   color: white; }
 
 .header-video {
-  background-color: black;
-  width: 800px;
-  height: 400px;
+  margin-left: 10%;
+  width: 700px;
+  height: 300px;
   float: right;
   position: absolute;
   top: 10.1%;
-  right: 10%; }
+  right: 11%; }
+  .header-video .vid-holder {
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    -webkit-box-shadow: 0px 9px 26px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 26px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 26px -5px rgba(0, 0, 0, 0.75); }
 
 .scrl-dwn {
   width: 2%;
@@ -144,9 +151,87 @@ body {
     .scrl-dwn .arrow-box .arrow-down {
       height: 40px; }
 
+.card-container {
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 85%;
+  left: 12%;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1.7rem; }
+  .card-container .card {
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+    position: relative; }
+  .card-container .card-circle {
+    position: absolute;
+    top: -30%;
+    left: 30%; }
+    .card-container .card-circle .circle-top {
+      width: 150px;
+      height: 150px;
+      background: white;
+      -moz-border-radius: 75px;
+      -webkit-border-radius: 75px;
+      border-radius: 75px;
+      -webkit-box-shadow: 0px 9px 26px -5px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 9px 26px -5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 9px 26px -5px rgba(0, 0, 0, 0.25);
+      position: relative; }
+      .card-container .card-circle .circle-top .circle-image {
+        position: absolute; }
+        .card-container .card-circle .circle-top .circle-image .c-img {
+          padding: 35px; }
+  .card-container .card-desc-space {
+    height: 95px; }
+  .card-container .card-description {
+    padding: 0.5rem  1.9rem 1.1rem 1.9rem;
+    line-height: 1.6em;
+    text-align: center;
+    font-weight: 700;
+    color: #072744; }
+  .card-container .button {
+    display: block;
+    background-color: #e6007e;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .3s ease-out; }
+    .card-container .button:hover {
+      background-color: #00b0ea; }
+  .card-container img {
+    max-width: 100%; }
+
 .middle {
   width: 100%;
   height: 50vh;
   background: url("http://res.cloudinary.com/dzwi57aj6/image/upload/v1519679028/maus/middle_pic.png");
   background-size: cover;
+  background-position: top;
   padding-top: 100px; }
+  .middle .middle-box {
+    width: 100;
+    height: auto;
+    margin: 0 19% 0 13%;
+    background: #00b0ea;
+    position: absolute;
+    top: 145%;
+    left: 0;
+    right: 0; }
+    .middle .middle-box .middle-text {
+      padding: 70px;
+      text-align: center;
+      color: #072744; }
+      .middle .middle-box .middle-text h3 {
+        font-weight: 700; }
+      .middle .middle-box .middle-text span {
+        margin-left: 1em; }
+
+.footer {
+  height: 70vh;
+  width: 100%;
+  background-color: white; }

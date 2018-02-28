@@ -10,119 +10,232 @@
    Or add your statements here:
   */
  
- * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
- } 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
  
- body{
-   font-family: 'PT Sans', sans-serif;
-   font-size: 1em;
-   line-height: 1.3;
-   font-weight: 400;
- }
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: 400;
+}
  
- .home {
-   height: 95vh;
-   background: url("http://res.cloudinary.com/dzwi57aj6/image/upload/v1519672646/maus/top-background.jpg");
-   background-size: cover;
-   background-position: top;
- }
+.home {
+  height: 100vh;
+  background: url("http://res.cloudinary.com/dzwi57aj6/image/upload/v1519672646/maus/top-background.jpg");
+  background-size: cover;
+  background-position: top;
+}
  
  
- .wrapper {
-   width: 100%;
-   margin: 0 auto;
- }
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
  
- .contact-container {
-   width: 80%;
-   margin: 0 auto;
-   position: relative;
- }
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
  
- .logo {
-   width: 500px;
-   height: auto;
-   padding: 35px 35px 0px 1%;
+.logo {
+  width: 500px;
+  height: auto;
+  padding: 35px 35px 0px 1%;
    
  }
  
- .logo img {
-   width: 80%;
- }
+.logo img {
+  width: 80%;
+}
  
- .contact-top {
-   font-family: 'Ropa Sans', sans-serif;
-   font-size: 1.2rem;
-   color: white;
-   position: absolute;
-   top: 80px;
-   right: 150px;
- }
+.contact-top {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  position: absolute;
+  top: 80px;
+  right: 150px;
+}
  
- .top-bar {
-   width: 100%;
-   background: $primary-rose;
-   padding: 10px;
- }
+.top-bar {
+  width: 100%;
+  background: $primary-rose;
+  padding: 10px;
+}
  
- .motto{
-   color: white;
-   font-family: 'PT Sans', sans-serif;
-   font-weight: bold;
-   font-size: 1.1rem;
-   text-align: left;
-   padding: 0px 35px 0px 13%;
- }
+
+.motto{
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 0px 35px 0px 13%;
+}
  
- .header-container {
-   width: 80%;
-   height: 500px;
-   margin: 0 auto;
-   padding: 56px ;
-   position: relative;
+.header-container {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 56px ;
+  position: relative;
   //  background-color: lavender;
- }
+}
  
- .header-text {
-   width: 25%;
+.header-text {
+   width: 30%;
    color: white;
- }
+}
  
- .header-video{
-   background-color: black;
-   width: 800px;
-   height: 400px;
-   float: right;
-   position: absolute;
-   top: 10.1%;
-   right: 10%;
+.header-video{
+  margin-left: 10%;
+  width: 700px;
+  height: 300px;
+  float: right;
+  position: absolute;
+  top: 10.1%;
+  right: 11%;
+  
+  .vid-holder {
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    -webkit-box-shadow: 0px 9px 26px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 26px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 26px -5px rgba(0,0,0,0.75);
+    
+  }
+}
  
- }
- 
- .scrl-dwn{
-   width: 2%;
-   padding-top: 100px;
-   color: white;
-   .las {
-      writing-mode: vertical-rl;
-      text-orientation: sideways-upright;
-      transform: rotate(180deg);
-   }
-    .arrow-box{
-      padding-top: 30px;
-      .arrow-down {
-        height: 40px;
+.scrl-dwn{
+  width: 2%;
+  padding-top: 100px;
+  color: white;
+
+  .las {
+    writing-mode: vertical-rl;
+    text-orientation: sideways-upright;
+    transform: rotate(180deg);
+  }
+  .arrow-box{
+    padding-top: 30px;
+    .arrow-down {
+      height: 40px;
       }
     }
- }
- .middle {
-   width: 100%;
-   height: 50vh;
-   background: url("http://res.cloudinary.com/dzwi57aj6/image/upload/v1519679028/maus/middle_pic.png");
-   background-size: cover;
-   padding-top: 100px;
- 
- }
+}
+
+.card-container {
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 85%;
+  left: 12%;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1.7rem;
+
+  .card {
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+    position: relative;
+  }
+  .card-circle {
+    position: absolute;
+    top: -30%;
+    left: 30%;
+    .circle-top {
+      width: 150px; 
+      height: 150px; 
+      background: white;
+       -moz-border-radius: 75px; 
+       -webkit-border-radius: 75px;
+        border-radius: 75px;
+        -webkit-box-shadow: 0px 9px 26px -5px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 9px 26px -5px rgba(0,0,0,0.25);
+        box-shadow: 0px 9px 26px -5px rgba(0,0,0,0.25);
+      position: relative;  
+    .circle-image {
+       position: absolute;
+        .c-img{
+        padding: 35px;
+        } 
+      }    
+    }
+  }
+
+  .card-desc-space {
+    height: 95px;
+  }
+  .card-description {
+    padding: 0.5rem  1.9rem 1.1rem 1.9rem;
+    line-height: 1.6em;
+    text-align: center;
+    font-weight: 700;
+    color: $secondary-font-color;
+  }
+  .button {
+    display: block;
+    background-color: $primary-rose;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .3s ease-out;
+    &:hover {
+      background-color: $primary-turqouise;
+    }
+  }
+  img {
+      max-width: 100%;
+  }
+}
+
+
+
+.middle {
+  width: 100%;
+  height: 50vh;
+  background: url("http://res.cloudinary.com/dzwi57aj6/image/upload/v1519679028/maus/middle_pic.png");
+  background-size: cover;
+  background-position: top;
+  padding-top: 100px;
+
+  .middle-box {
+    width: 100;
+    height: auto;
+    margin: 0 19% 0 13%;
+    background: $primary-turqouise;
+    position: absolute;
+    top: 145%;
+    left: 0;
+    right: 0;
+
+    .middle-text {
+      padding: 70px;
+      text-align: center;
+      color: $secondary-font-color;
+
+      h3{
+        font-weight: 700;
+      }
+
+      span {
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 70vh;
+  width: 100%;
+  background-color: white;
+}
